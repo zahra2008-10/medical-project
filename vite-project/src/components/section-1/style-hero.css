@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+  margin-top: 60px;
+}
+.container-1 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 20px;
+}
+.stars-div {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.star {
+  width: 20px;
+}
+.stars {
+  display: flex;
+  gap: 0.1rem;
+}
+.stars-div span {
+  font-family: Satoshi, "Satoshi Placeholder", sans-serif;
+  font-feature-settings: "blwf", "cv03", "cv04", "cv09", "cv11";
+  font-size: 18px;
+  font-style: normal;
+  font-variation-settings: normal;
+  font-weight: 500;
+  height: 27.9px;
+  letter-spacing: -0.45px;
+  line-height: 27.9px;
+}
+
+.text-div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.text-div h1 {
+  font-feature-settings: "blwf", "cv03", "cv04", "cv09", "cv11";
+  font-size: 42px;
+  font-style: normal;
+  font-variation-settings: normal;
+  font-weight: 500;
+  height: 96.6px;
+  letter-spacing: -1.26px;
+  line-height: 48.3px;
+}
+.text-div p {
+  color: rgb(94, 94, 94);
+  font-family: Satoshi, "Satoshi Placeholder", sans-serif;
+  font-feature-settings: "blwf", "cv03", "cv04", "cv09", "cv11";
+  font-size: 18px;
+  font-style: normal;
+  font-variation-settings: normal;
+  font-weight: 500;
+  height: 55.8px;
+  letter-spacing: -0.45px;
+}
+
+.btn-1 {
+  width: 118.4px;
+  border-radius: 80px;
+  background-color: #4586ff;
+  height: 44px;
+  color: white;
+}
+.link-play {
+  display: flex;
+  margin-top: 4px;
+  gap: 0.6rem;
+  border: 1px solid white;
+  background-color: white;
+  padding: 8px;
+  border-radius: 80px;
+}
+.btn-div {
+  display: flex;
+  gap: 1rem;
+}
+.play-icon {
+  width: 15px;
+}
+.link-play span {
+  border: 1px solid rgb(235, 228, 228);
+  background-color: white;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  padding-left: 5px;
+  padding-top: 3px;
+}
+
+.imgs-text-div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Images container */
+.imgs-box {
+  display: flex;
+  align-items: center;
+}
+
+/* All images */
+.imgs-box img {
+  width: 58px;
+  height: 58px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+/* Make the images overlap */
+.imgs-box img + img {
+  margin-left: -15px;
+}
+
+/* Text */
+.imgs-text-div p {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.imgs-text-div p:first-child {
+  font-size: 22px;
+  font-weight: 500;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+.imgs-text-div p:last-child {
+  font-size: 16px;
+  color: #777;
+}
+
+.doctor-1 {
+  height: 560px;
+  width: 520px;
+  border-radius: 38px;
+  object-fit: cover;
+}
+
+.div-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: 50px;
+  background-color: #f5faff;
+  padding-left: 30px;
+  height: 400px;
+  width: 80%;
+  border-radius: 24px;
+}
+.div-form button {
+  width: 140.4px;
+  border-radius: 80px;
+  background-color: #4586ff;
+  height: 44px;
+  color: white;
+  margin-top: 30px;
+}
+.div-head {
+  display: flex;
+  gap: 1rem;
+}
+.div-head h4 {
+  font-family: "Inter Display", "Inter Display Placeholder", sans-serif;
+  font-feature-settings: "blwf", "cv03", "cv04", "cv09", "cv11";
+  font-size: 32px;
+  font-style: normal;
+  font-variation-settings: normal;
+  font-weight: 500;
+  height: 38.4px;
+  letter-spacing: -0.96px;
+  line-height: 38.4px;
+}
+
+.form {
+  display: flex;
+  gap: 2rem;
+  margin-top: 40px;
+}
+
+input {
+  border: 1px solid white;
+  padding: 12px;
+  border-radius: 30px;
+  background-color: white;
+  height: 30px;
+  width: 250px;
+
+  font-weight: 500;
+  height: 54px;
+  letter-spacing: -0.64px;
+  line-height: 19.2px;
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  margin-top: 6px;
+}
+
+.number-text {
+  display: flex;
+  gap: 1rem;
+}
+.number-text h2 {
+  font-family: "Inter Display", "Inter Display Placeholder", sans-serif;
+  font-feature-settings: "blwf", "cv03", "cv04", "cv09", "cv11";
+  font-size: 38px;
+  font-style: normal;
+  font-variation-settings: normal;
+  font-weight: 500;
+  height: 45.6px;
+  letter-spacing: -1.14px;
+  line-height: 45.6px;
+}
+
+.number-text p {
+  font-family: Satoshi, "Satoshi Placeholder", sans-serif;
+  font-feature-settings: "blwf", "cv03", "cv04", "cv09", "cv11";
+  font-size: 17px;
+  font-style: normal;
+  font-variation-settings: normal;
+  font-weight: 500;
+  height: 26.35px;
+  letter-spacing: -0.425px;
+  line-height: 26.35px;
+}

@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  font-family: sans-serif;
+}
+
+.menu {
+  display: flex;
+  gap: 1rem;
+}
+.menu a {
+  font-family: Satoshi, "Satoshi Placeholder", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: -0.425px;
+  line-height: 26.35px;
+}
+.img-div {
+  display: flex inline;
+  gap: 0.5rem;
+}
+.img-div span {
+  padding-top: 5px;
+}
+.logo {
+  width: 20px;
+  color: white;
+  margin: auto;
+  padding-top: 9px;
+}
+.logo-div {
+  width: 38px;
+  height: 38px;
+  background-color: rgb(69, 134, 255);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.btn-head {
+  padding-bottom: 10px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 10px;
+  background-color: #4586ff;
+  border-radius: 80px;
+  color: white;
+}
+.burger-btn {
+  display: none;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+  .container {
+    margin-top: 20px;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  /* Hide desktop menu */
+  .menu {
+    display: none;
+  }
+
+  /* Show burger button */
+  .burger-btn {
+    display: block;
+    border: none;
+    background: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: black;
+  }
+
+  .btn-head {
+    display: none;
+  }
+
+  .img-div {
+    gap: 0.5rem;
+  }
+}
+
+/* =========================
+   MOBILE MENU
+========================= */
+
+@media (max-width: 768px) {
+  .menu.active {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    right: 20px;
+
+    padding: 20px;
+
+    background-color: white;
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+
+    z-index: 1000;
+  }
+
+  .menu.active a {
+    font-size: 17px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .container {
+    margin-top: 15px;
+    padding: 0 15px;
+  }
+
+  .logo-div {
+    width: 35px;
+    height: 35px;
+  }
+
+  .logo {
+    width: 18px;
+    padding-top: 8px;
+  }
+
+  .burger-btn {
+    font-size: 25px;
+  }
+
+  .menu.active {
+    left: 15px;
+    right: 15px;
+  }
+}

@@ -1,0 +1,345 @@
+/* =========================
+   WHY US SECTION
+========================= */
+
+.why-us {
+  width: 100%;
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.why-us-container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 80px;
+}
+
+/* =========================
+   LEFT CONTENT
+========================= */
+
+.why-us-content {
+  width: 55%;
+}
+
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 25px;
+}
+
+.section-label span {
+  width: 9px;
+  height: 9px;
+
+  background: #4385ff;
+  border-radius: 50%;
+}
+
+.section-label p {
+  margin: 0;
+
+  font-size: 16px;
+  font-weight: 500;
+  color: #171717;
+}
+
+.why-us-content h2 {
+  margin: 0 0 55px;
+
+  font-size: 48px;
+  line-height: 1.15;
+  font-weight: 500;
+
+  letter-spacing: -2px;
+  color: #111111;
+}
+
+/* =========================
+   WHY ITEMS
+========================= */
+
+.why-item {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 28px;
+
+  margin-bottom: 42px;
+}
+
+.number {
+  width: 54px;
+  height: 54px;
+
+  flex-shrink: 0;
+
+  border: 1px solid #dddddd;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 17px;
+  color: #222222;
+}
+
+.item-content {
+  max-width: 470px;
+}
+
+.item-content h3 {
+  margin: 4px 0 14px;
+
+  font-size: 24px;
+  font-weight: 500;
+
+  color: #151515;
+}
+
+.item-content p {
+  margin: 0;
+
+  font-size: 17px;
+  line-height: 1.55;
+
+  color: #666666;
+}
+
+/* =========================
+   GET STARTED BUTTON
+========================= */
+
+.get-started {
+  margin-top: 10px;
+
+  border: none;
+  border-radius: 30px;
+
+  padding: 15px 25px;
+
+  background: #4385ff;
+  color: white;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.get-started:hover {
+  transform: translateY(-2px);
+  background: #3177f5;
+}
+
+/* =========================
+   RIGHT IMAGE
+========================= */
+
+.why-us-image {
+  width: 50%;
+
+  position: relative;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-doctor-image {
+  width: 540px;
+  height: 585px;
+
+  object-fit: cover;
+
+  border-radius: 25px;
+}
+
+/* =========================
+   DOCTORS CARD
+========================= */
+
+.doctors-card {
+  position: absolute;
+
+  left: -70px;
+  bottom: -45px;
+
+  width: 360px;
+
+  padding: 25px 20px 20px;
+
+  background: white;
+
+  border-radius: 20px;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.doctors-card h3 {
+  margin: 0 0 7px;
+
+  font-size: 20px;
+  font-weight: 500;
+
+  color: #151515;
+}
+
+.card-subtitle {
+  margin: 0 0 28px;
+
+  font-size: 15px;
+  color: #777777;
+}
+
+/* =========================
+   DOCTOR
+========================= */
+
+.doctor {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  margin-bottom: 22px;
+}
+
+.doctor img {
+  width: 46px;
+  height: 46px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+}
+
+.doctor h4 {
+  margin: 0 0 5px;
+
+  font-size: 18px;
+  font-weight: 500;
+
+  color: #151515;
+}
+
+.doctor p {
+  margin: 0;
+
+  font-size: 14px;
+
+  color: #888888;
+}
+
+/* =========================
+   EXPERTS BUTTON
+========================= */
+
+.experts-btn {
+  width: 100%;
+
+  margin-top: 8px;
+
+  padding: 17px;
+
+  border: none;
+  border-radius: 14px;
+
+  background: #f2f7ff;
+
+  color: #4385ff;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.experts-btn:hover {
+  background: #e7f0ff;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+  .why-us-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .why-us-content {
+    width: 100%;
+  }
+
+  .why-us-image {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .main-doctor-image {
+    width: 100%;
+    max-width: 540px;
+  }
+
+  .doctors-card {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 600px) {
+  .why-us {
+    padding: 70px 0;
+  }
+
+  .why-us-container {
+    padding: 0 20px;
+  }
+
+  .why-us-content h2 {
+    font-size: 36px;
+    letter-spacing: -1px;
+  }
+
+  .why-item {
+    gap: 18px;
+  }
+
+  .item-content h3 {
+    font-size: 20px;
+  }
+
+  .item-content p {
+    font-size: 15px;
+  }
+
+  .number {
+    width: 45px;
+    height: 45px;
+
+    font-size: 14px;
+  }
+
+  .main-doctor-image {
+    height: 450px;
+  }
+
+  .doctors-card {
+    width: calc(100% - 30px);
+    bottom: -40px;
+  }
+}
